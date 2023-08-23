@@ -1,14 +1,12 @@
 import Header from 'components/Header';
 import Hero from 'components/Hero/Hero';
 import Popular from 'components/MainContent';
-import Teste from './teste/page';
-import Homes from 'components/Homes';
 
-export default function Home() {
+export default function Teste() {
   return (
     <>
-      <Teste />
-      <Homes />
+     <Header />
+     <Hero />
     </>
   )
 }

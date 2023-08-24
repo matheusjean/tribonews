@@ -1,14 +1,15 @@
 "use client"
 import React from "react"
-import "./style.css"
 
 import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import Image from 'next/image'
+import { AiFillCalendar, AiOutlineComment } from 'react-icons/ai'
+
 import { popular } from "../../../data"
 import Heading from "../Heading"
-
-import { AiFillCalendar, AiOutlineComment } from 'react-icons/ai'
+import { Box, BoxShadow, Category, CategoryLabel, Comment, Date, Images, ImagesCover, Label, Text, Title } from './styles'
 
 const Popular = () => {
   const settings = {
@@ -39,29 +40,29 @@ const Popular = () => {
         <div className='content'>
           <Slider autoplay={false} {...settings}>
             {popular.map((val) => (
-                <div className='items'>
-                  <div className='box shadow'>
-                    <div className='images row'>
-                      <div className='img'>
-                        <img src={val.cover} alt='' />
-                      </div>
-                      <div className='category category1'>
-                        <span>{val.catgeory}</span>
-                      </div>
-                    </div>
-                    <div className='text row'>
-                      <h1 className='title'>{val.title.slice(0, 40)}...</h1>
-                      <div className='date'>
+                <Box>
+                  <BoxShadow>
+                    <Images>
+                      <ImagesCover>
+                        <Image src={val.cover} alt='' layout="fill"/>
+                      </ImagesCover>
+                      <Category>
+                        <CategoryLabel>{val.catgeory}</CategoryLabel>
+                      </Category>
+                    </Images>
+                    <Text>
+                      <Title>{val.title.slice(0, 51)}...</Title>
+                      <Date>
                         <AiFillCalendar />
-                        <label>{val.date}</label>
-                      </div>
-                      <div className='comment'>
+                        <Label>{val.date}</Label>
+                      </Date>
+                      <Comment>
                         <AiOutlineComment/>
-                        <label>{val.comments}</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                        <Label>{val.comments}</Label>
+                      </Comment>
+                    </Text>
+                  </BoxShadow>
+                </Box>
             ))}
           </Slider>
         </div>

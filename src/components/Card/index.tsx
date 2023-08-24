@@ -1,18 +1,19 @@
 import Link from 'next/link'
 import React from "react"
-import { Author, Box, Category, Text, Time } from './styles'
+import { Image as Img, Author, Box, Category, Text, Time, Title } from './styles'
+import Image from 'next/image'
 
 const Card = ({ item: { id, cover, catgeory, title, authorName, time } }) => {
   return (
     <>
       <Box>
-        <div className='img'>
-          <img src={cover} alt='' />
-        </div>
+        <Img className='img'>
+          <Image src={cover} alt={cover.name} layout="fill"/>
+        </Img>
         <Text>
           <Category>{catgeory}</Category>
           <Link href={`/SinglePage/${id}`}>
-            <h1 className='titleBg'>{title}</h1>
+            <Title>{title}</Title>
           </Link>
           <div>
             <Author>by {authorName}</Author>

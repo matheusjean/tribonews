@@ -24,10 +24,6 @@ export const Box = styled.div`
     grid-row-start: 1;
     grid-row-end: 9;
 
-    h1 {
-      font-size: 28px;
-    }
-
     @media screen and (max-width: 768px) {
       .hero .box:nth-child(1) {
         grid-column-start: 1;
@@ -43,11 +39,6 @@ export const Box = styled.div`
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 5;
-
-    h1 {
-      margin-top: 5px;
-      font-size: 25px;
-    }
 
     @media screen and (max-width: 768px) {
       .hero .box:nth-child(2) {
@@ -65,11 +56,6 @@ export const Box = styled.div`
     grid-row-start: 5;
     grid-row-end: 9;
 
-    h1 {
-      margin-top: 5px;
-      font-size: 20px;
-    }
-
     @media screen and (max-width: 768px) {
       .hero .box:nth-child(3) {
         grid-column-start: 1;
@@ -85,11 +71,6 @@ export const Box = styled.div`
     grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 9;
-
-    h1 {
-      margin-top: 5px;
-      font-size: 20px;
-    }
 
     @media screen and (max-width: 768px) {
       .hero .box:nth-child(4) {
@@ -119,8 +100,6 @@ export const Hero = styled.section`
   color: #fff;
 
   img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;

@@ -1,11 +1,13 @@
 export const hero = [
   {
     id: 1,
-    cover: '../images/cs2.jpg',
+    cover:
+      'https://noticias.maisesports.com.br/wp-content/uploads/2023/06/cs-2-inferno-4.jpg',
     catgeory: 'Counter-Strike',
     title: 'CS2: Inferno e Train podem ser os próximos mapas',
     authorName: 'Matheus Jean',
-    authorImg: '../images/cs2.jpg',
+    authorImg:
+      'https://noticias.maisesports.com.br/wp-content/uploads/2023/06/cs-2-inferno-4.jpg',
     time: '22 Ago - 2023',
     desc: [
       {

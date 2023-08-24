@@ -1,4 +1,16 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+export const Image = styled.div`
+  ${({ theme }) => css`
+    & > span {
+      height: 100% !important;
+    }
+    & > span > img {
+      object-fit: cover;
+      object-position: top;
+    }
+  `}
+`
 
 export const Box = styled.div`
   position: relative;
@@ -78,4 +90,8 @@ export const Author = styled.span`
 
 export const Time = styled.span`
   font-size: 15px;
+`
+
+export const Title = styled.h1`
+  /* font-size: 15px; */
 `

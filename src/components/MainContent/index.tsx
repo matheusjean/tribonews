@@ -9,7 +9,7 @@ import { AiFillCalendar, AiOutlineComment } from 'react-icons/ai'
 
 import { popular } from "../../../data"
 import Heading from "../Heading"
-import { Box, BoxShadow, Category, CategoryLabel, Comment, Date, Images, ImagesCover, Label, Text, Title } from './styles'
+import { Box, BoxShadow, Category, CategoryLabel, Comment, Container, Date, Images, ImagesCover, Label, Text, Title } from './styles'
 
 const Popular = () => {
   const settings = {
@@ -35,9 +35,8 @@ const Popular = () => {
   }
   return (
     <>
-      <section className='popular'>
+      <Container>
         <Heading title='Popular' />
-        <div className='content'>
           <Slider autoplay={false} {...settings}>
             {popular.map((val) => (
                 <Box>
@@ -65,8 +64,7 @@ const Popular = () => {
                 </Box>
             ))}
           </Slider>
-        </div>
-      </section>
+      </Container>
     </>
   )
 }

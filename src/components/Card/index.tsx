@@ -3,7 +3,7 @@ import React from "react"
 import { Image as Img, Author, Box, Category, Text, Time, Title } from './styles'
 import Image from 'next/image'
 
-const Card = ({ item: { id, cover, catgeory, title, authorName, time } }) => {
+const Card = ({ item: { id, cover, category, title, authorName, time } }) => {
   return (
     <>
       <Box>
@@ -11,7 +11,7 @@ const Card = ({ item: { id, cover, catgeory, title, authorName, time } }) => {
           <Image src={cover} alt={cover.name} layout="fill"/>
         </Img>
         <Text>
-          <Category>{catgeory}</Category>
+          <Category>{category}</Category>
           <Link href={`/SinglePage/${id}`}>
             <Title>{title}</Title>
           </Link>

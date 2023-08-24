@@ -7,7 +7,7 @@ import { gallery } from "../../../data"
 // import Tpost from "../Tpost/Tpost"
 import SocialMedia from "../Social"
 
-//const allCat = [...new Set(popular.map((curEle) => curEle.catgeory))]
+//const allCat = [...new Set(popular.map((curEle) => curEle.category))]
 //console.log(allCat)
 
 const Side = () => {
@@ -19,7 +19,7 @@ const Side = () => {
     slidesToScroll: 1,
   }
 
-  const catgeory = ["Valorant", "LOL", "Counter-Strike", "Cinema", "Notícias", "Comic-con", "Gamescon", "Diablo 4"]
+  const category = ["Valorant", "LOL", "Counter-Strike", "Cinema", "Notícias", "Comic-con", "Gamescon", "Diablo 4"]
   return (
     <>
       <Heading title='Fique Conectado' />
@@ -46,7 +46,7 @@ const Side = () => {
       <section className='catgorys'>
         <Heading title='Categorias' />
         {/*<div className='items'>{allCat}</div>*/}
-        {catgeory.map((val) => {
+        {category.map((val) => {
           return (
             <div className='category category1'>
               <span>{val}</span>

@@ -46,7 +46,7 @@ const Popular = () => {
                         <Image src={val.cover} alt='' layout="fill"/>
                       </ImagesCover>
                       <Category>
-                        <CategoryLabel>{val.catgeory}</CategoryLabel>
+                        <CategoryLabel>{val.category}</CategoryLabel>
                       </Category>
                     </Images>
                     <Text>

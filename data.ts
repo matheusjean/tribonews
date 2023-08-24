@@ -3,7 +3,7 @@ export const hero = [
     id: 1,
     cover:
       'https://noticias.maisesports.com.br/wp-content/uploads/2023/06/cs-2-inferno-4.jpg',
-    catgeory: 'Counter-Strike',
+    category: 'Counter-Strike',
     title: 'CS2: Inferno e Train podem ser os próximos mapas',
     authorName: 'Matheus Jean',
     authorImg:
@@ -49,7 +49,7 @@ export const hero = [
     id: 2,
     cover:
       'https://gamearena.gg/wp-content/uploads/2023/08/tristana-florescer-espiritual-1024x576.jpg',
-    catgeory: 'CbLoL',
+    category: 'CbLoL',
     title: 'CBLOL 2023: nos playoffs, Tristana tem quase 79% dos banimentos',
     authorName: 'Matheus',
     authorImg: '../images/author.jpg',
@@ -94,7 +94,7 @@ export const hero = [
     id: 3,
     cover:
       'https://gamearena.gg/wp-content/uploads/2023/08/53130572515_bc8a017cae_k.jpg',
-    catgeory: 'CBLoL',
+    category: 'CBLoL',
     title: 'CBLOL 2023: diz Croc sobre ser tricampeão',
     authorName: 'Matheus Jean',
     authorImg: '../images/author.jpg',
@@ -138,7 +138,7 @@ export const hero = [
   {
     id: 4,
     cover: 'https://gamearena.gg/wp-content/uploads/2023/08/CS2-bug.jpg',
-    catgeory: 'Counter-Strike',
+    category: 'Counter-Strike',
     title: 'CS2: jogador consegue bugar e subir no teto de todos os mapas',
     authorName: 'Jairo',
     authorImg: '../images/author.jpg',
@@ -184,7 +184,7 @@ export const world = [
   {
     id: 1,
     cover: '../images/world/world1.jpg',
-    catgeory: '',
+    category: '',
     title: 'Stepping back does make Sussex safer and at peace ',
     authorName: 'Salman',
     time: '5 Jun - 2023'
@@ -192,7 +192,7 @@ export const world = [
   {
     id: 2,
     cover: '../images/world/world2.jpg',
-    catgeory: '',
+    category: '',
     title: 'Renewable energy dead as industry waits for Policy ',
     authorName: 'Salman',
     time: '5 Jun - 2023',
@@ -204,7 +204,7 @@ export const world = [
   {
     id: 3,
     cover: '../images/world/world3.jpg',
-    catgeory: '',
+    category: '',
     title: 'Mount Etna erupts fashion in nice looking pictures ',
     authorName: 'Salman',
     time: '5 Jun - 2023'
@@ -212,7 +212,7 @@ export const world = [
   {
     id: 4,
     cover: '../images/world/world2.jpg',
-    catgeory: '',
+    category: '',
     title: 'China asks Canada to add their full plan ',
     authorName: 'Salman',
     time: '5 Jun - 2023'
@@ -220,7 +220,7 @@ export const world = [
   {
     id: 5,
     cover: '../images/world/world2.jpg',
-    catgeory: '',
+    category: '',
     title: 'Serena secures comeback win against Ivanovic',
     authorName: 'Salman',
     time: '5 Jun - 2023'
@@ -230,7 +230,7 @@ export const world = [
 export const popular = [
   {
     id: 1,
-    catgeory: 'Valorant',
+    category: 'Valorant',
     title: 'VALORANT: tudo o que sabemos sobre a temporada 2024',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -240,7 +240,7 @@ export const popular = [
   },
   {
     id: 2,
-    catgeory: 'Notícias',
+    category: 'Notícias',
     title: 'Persona 3 Reloaded chega em fevereiro de 2024',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -249,7 +249,7 @@ export const popular = [
   },
   {
     id: 3,
-    catgeory: 'Notícias',
+    category: 'Notícias',
     title: 'PlayStation Portal será lançado até o final de 2023',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -258,7 +258,7 @@ export const popular = [
   },
   {
     id: 4,
-    catgeory: 'Notícias',
+    category: 'Notícias',
     title: 'Star Wars: nova produção terá Jon Hamm como Boba Fett',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -268,7 +268,7 @@ export const popular = [
   },
   {
     id: 5,
-    catgeory: 'Valorant',
+    category: 'Valorant',
     title: 'VCT 2023 não terá público por medidas de segurança',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -278,7 +278,7 @@ export const popular = [
   },
   {
     id: 6,
-    catgeory: 'Notícias',
+    category: 'Notícias',
     title: 'CBLOL 2023: Route e dyNquedo são top KDA dos playoffs',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -288,7 +288,7 @@ export const popular = [
   },
   {
     id: 7,
-    catgeory: 'Valorant',
+    category: 'Valorant',
     title:
       'VALORANT: “seria uma honra, mas nada até agora”, diz xand sobre possibilidade de ir para MIBR',
     date: '19. Fevereiro 2023',
@@ -299,7 +299,7 @@ export const popular = [
   },
   {
     id: 8,
-    catgeory: 'League of Legends',
+    category: 'League of Legends',
     title:
       'LEAGUE OF LEGENDSCBLOL 2023: “deixar um legado aqui no Brasil quando eu ir embora”, diz Croc sobre ser tricampeão',
     date: '19. Fevereiro 2023',
@@ -310,7 +310,7 @@ export const popular = [
   },
   {
     id: 9,
-    catgeory: 'Gamescom',
+    category: 'Gamescom',
     title: 'Gamescom 2023: Cyberpunk apresenta novidades de gameplay da DLC',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -319,7 +319,7 @@ export const popular = [
   },
   {
     id: 10,
-    catgeory: 'Diablo 4',
+    category: 'Diablo 4',
     title: 'Gamescom 2023: Diablo IV mostra trailer da segunda temporada',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -329,7 +329,7 @@ export const popular = [
   },
   {
     id: 11,
-    catgeory: 'Gamescom',
+    category: 'Gamescom',
     title: 'Gamescom 2023: novos detalhes de Zenless Zone Zero',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -339,7 +339,7 @@ export const popular = [
   },
   {
     id: 12,
-    catgeory: 'Games',
+    category: 'Games',
     title: 'Gamescom 2023: Lords of the Fallen mostra trailer da história',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -348,7 +348,7 @@ export const popular = [
   },
   {
     id: 13,
-    catgeory: 'RPG',
+    category: 'RPG',
     title: 'Assassin’s Creed: confira prévia do RPG',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -358,7 +358,7 @@ export const popular = [
   },
   {
     id: 14,
-    catgeory: 'Cinema',
+    category: 'Cinema',
     title: 'A Guerra do Hambúrguer 2: divulgado teaser trailer com Kenan e Kel',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -368,7 +368,7 @@ export const popular = [
   },
   {
     id: 15,
-    catgeory: 'Cinema',
+    category: 'Cinema',
     title:
       'CINEMAThe Wrecking Crew: comédia de ação com Jason Momoa e Dave Bautista terá diretor de Besouro Azul',
     date: '19. Fevereiro 2023',
@@ -379,7 +379,7 @@ export const popular = [
   },
   {
     id: 16,
-    catgeory: 'Cinema',
+    category: 'Cinema',
     title: 'James Gunn promete ‘mapa incrivelmente detalhado’ do novo DCU',
     date: '19. Fevereiro 2023',
     comments: 0,
@@ -392,28 +392,28 @@ export const popular = [
 export const ppost = [
   {
     id: 1,
-    catgeory: 'world',
+    category: 'world',
     title: 'We Went Deep Underground For This Amazing Cave Shot',
     date: '19. Fevereiro 2023',
     cover: '../images/ppost/pop1.jpg'
   },
   {
     id: 2,
-    catgeory: 'Notícias',
+    category: 'Notícias',
     title: '6 Reasons Why You Shouldn’t Skip Breakfast',
     date: '19. Fevereiro 2023',
     cover: '../images/ppost/pop2.jpg'
   },
   {
     id: 3,
-    catgeory: 'food',
+    category: 'food',
     title: 'Our Top 5 Restaurants For A Complete Culinary Experience',
     date: '19. Fevereiro 2023',
     cover: '../images/ppost/pop3.jpg'
   },
   {
     id: 4,
-    catgeory: 'fashion',
+    category: 'fashion',
     title: 'Hipster Chic Is In Again: Get Some Glasses',
     date: '19. Fevereiro 2023',
     cover: '../images/ppost/pop4.jpg'
@@ -422,28 +422,28 @@ export const ppost = [
 export const lifestyle = [
   {
     id: 1,
-    catgeory: 'world',
+    category: 'world',
     title: 'Mustang Teases With A New Promo',
     date: '19. Fevereiro 2023',
     cover: '../images/life/life1.jpg'
   },
   {
     id: 2,
-    catgeory: 'sport',
+    category: 'sport',
     title: 'Surfs Up – Places For Killer Waves',
     date: '19. Fevereiro 2023',
     cover: '../images/life/life2.jpg'
   },
   {
     id: 3,
-    catgeory: 'fashion',
+    category: 'fashion',
     title: 'Learn How To Nail Your Favorite Look',
     date: '19. Fevereiro 2023',
     cover: '../images/life/life3.jpg'
   },
   {
     id: 4,
-    catgeory: 'world',
+    category: 'world',
     title: 'Music Playing On R&B Stations',
     date: '19. Fevereiro 2023',
     cover: '../images/life/life4.jpg'

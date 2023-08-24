@@ -7,7 +7,7 @@ const Card = ({ item: { id, cover, catgeory, title, authorName, time } }) => {
   return (
     <>
       <Box>
-        <Img className='img'>
+        <Img>
           <Image src={cover} alt={cover.name} layout="fill"/>
         </Img>
         <Text>

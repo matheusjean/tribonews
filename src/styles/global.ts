@@ -133,9 +133,6 @@ a {
   letter-spacing: 2px;
   background-color: purple;
 }
-.row {
-  width: 50%;
-}
 .images {
   position: relative;
 }
@@ -162,24 +159,6 @@ a {
 }
 .category1 span:hover {
   color: #fff;
-}
-.title {
-  font-weight: 500;
-  font-size: 17px;
-  margin-bottom: 15px;
-}
-.comment i,
-.date i {
-  width: 30px;
-  color: #E4672E;
-  font-size: 13px;
-}
-
-.comment label,
-.date label {
-  font-size: 13px;
-  color: #868585;
-  margin-left: 5px;
 }
 .desc {
   font-size: 13px;

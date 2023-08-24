@@ -1,8 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import { hero } from "../../../data"
-import "./hero.css"
-import Card from "./Card"
+import Card from "../Card"
 import {Container, Hero as HeroSection} from './styles'
 
 const Hero = () => {

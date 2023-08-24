@@ -5,6 +5,13 @@ export const Container = styled.div`
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 6.6vh);
   grid-gap: 10px;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(18, 6vh);
+    grid-gap: 10px;
+  }
 `
 
 export const Box = styled.div`
@@ -20,6 +27,15 @@ export const Box = styled.div`
     h1 {
       font-size: 28px;
     }
+
+    @media screen and (max-width: 768px) {
+      .hero .box:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 5;
+      }
+    }
   }
 
   &:nth-child(2) {
@@ -31,6 +47,15 @@ export const Box = styled.div`
     h1 {
       margin-top: 5px;
       font-size: 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero .box:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 10;
+      }
     }
   }
 
@@ -44,6 +69,15 @@ export const Box = styled.div`
       margin-top: 5px;
       font-size: 20px;
     }
+
+    @media screen and (max-width: 768px) {
+      .hero .box:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 10;
+        grid-row-end: 15;
+      }
+    }
   }
 
   &:nth-child(4) {
@@ -55,6 +89,15 @@ export const Box = styled.div`
     h1 {
       margin-top: 5px;
       font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero .box:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 15;
+        grid-row-end: 20;
+      }
     }
   }
 `

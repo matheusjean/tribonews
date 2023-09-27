@@ -4,8 +4,8 @@ import Hero from 'components/Hero';
 export default function Teste() {
   return (
     <>
-     <Header />
-     <Hero />
+      <Header />
+      <Hero />
     </>
   )
 }

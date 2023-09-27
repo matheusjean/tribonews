@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import { hero } from "../../../data"
 import Card from "../Card"
-import {Container, Hero as HeroSection} from './styles'
+import { Container, Hero as HeroSection } from './styles'
 
 const Hero = () => {
   const [items, setIems] = useState(hero)
@@ -13,9 +13,7 @@ const Hero = () => {
         <Container>
           {items.map((item) => {
             return (
-              <div key={item.id}>
-                <Card item={item}/>
-              </div>
+              <Card item={item} key={item.id}/>
             )
           })}
         </Container>

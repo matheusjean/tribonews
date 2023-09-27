@@ -6,7 +6,7 @@ export default {
   },
   border: {
     white: '1px solid #fff',
-    primary: '1px solid #E4672E',
+    primary: '1px solid #836FFF',
     gray: '1px solid #ffffff26;',
     radius: {
       small: '0.4rem',
@@ -35,7 +35,8 @@ export default {
     }
   },
   colors: {
-    primary: '#E4672E',
+    primary: '#836FFF',
+    // primary: '#836FFF',
     white: '#FFFFFF',
     black: '#101010',
     gray: 'rgba(255, 255, 255, 0.4)',

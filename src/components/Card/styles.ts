@@ -59,7 +59,7 @@ export const Category = styled.span`
   color: #fff;
   padding: 5px 10px;
   letter-spacing: 2px;
-  background-color: #e4672e;
+  background-color: #836fff;
 `
 
 export const Text = styled.h1`

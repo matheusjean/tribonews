@@ -46,7 +46,7 @@ export const Date = styled.div`
   margin-top: 15px;
   padding: 5px 0 0 20px;
   display: flex;
-  color: #e4672e;
+  color: #836fff;
 
   svg {
     width: 17px;
@@ -54,11 +54,11 @@ export const Date = styled.div`
 `
 
 export const Comment = styled.div`
-  border-top: 1px solid #e4672e;
+  border-top: 1px solid #836fff;
   padding: 7px 0 0 20px;
   margin-top: 10px;
   display: flex;
-  color: #e4672e;
+  color: #836fff;
 
   svg {
     width: 17px;
@@ -77,10 +77,10 @@ export const Category = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 5px solid #e4672e;
+  border-left: 5px solid #836fff;
   width: auto;
   display: block;
-  background: linear-gradient(to right, #e4672e 50%, black 50%);
+  background: linear-gradient(to right, #836fff 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;

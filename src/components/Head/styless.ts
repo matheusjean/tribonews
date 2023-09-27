@@ -43,7 +43,7 @@ export const Button = styled.li`
 export const Navbar = styled.nav`
   position: absolute;
   display: block;
-  background-color: #e4672e;
+  background-color: #836fff;
   left: 0;
   transition: 0.5s;
   width: 100%;

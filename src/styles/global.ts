@@ -140,10 +140,10 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 5px solid #E4672E;
+  border-left: 5px solid #836FFF;
   width: auto;
   display: block;
-  background: linear-gradient(to right, #E4672E 50%, black 50%);
+  background: linear-gradient(to right, #836FFF 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;

@@ -43,7 +43,7 @@ const Popular = () => {
                   <BoxShadow>
                     <Images>
                       <ImagesCover>
-                        <Image src={val.cover} alt='' layout="fill"/>
+                        <Image src={val.cover} key={val.id} alt={val.title} layout="fill"/>
                       </ImagesCover>
                       <Category>
                         <CategoryLabel>{val.category}</CategoryLabel>

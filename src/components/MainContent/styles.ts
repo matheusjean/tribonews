@@ -33,7 +33,7 @@ export const Title = styled.h1`
   margin-bottom: 15px;
 `
 
-export const Text = styled.h1`
+export const Text = styled.div`
   width: 50%;
 
   h1 {

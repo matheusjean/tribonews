@@ -7,14 +7,13 @@ const Homes = () => {
   return (
     <>
       <main>
-        <div className='container'>
-          <section className='mainContent'>
-            <Popular />
+        <div className='container' key="homes">
+          <section className='mainContent' key="seila">
+            <Popular key="popular"/>
           </section>
-          <section className='sideContent'>
-            <Side />
+          <section className='sideContent' key="sides">
+            <Side key="side"/>
           </section>
-
         </div>
       </main>
     </>

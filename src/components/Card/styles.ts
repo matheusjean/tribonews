@@ -41,18 +41,6 @@ export const Box = styled.div`
 
   &:nth-child(3) {
     grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 9;
-
-    h1 {
-      margin-top: 5px;
-      font-size: 20px;
-    }
-  }
-
-  &:nth-child(4) {
-    grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 9;

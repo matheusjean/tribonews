@@ -101,7 +101,7 @@ const GlobalStyles = createGlobalStyle`
 
   /*-----------global-----------*/
 .container {
-  max-width: 90%;
+  width: 92.8%;
   margin: auto;
 }
 .flexSB {

@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react'
 import { useClickAway } from 'react-use'
 
-import Link from 'components/Link'
+// import Link from 'components/Link'
 
 import * as S from './styles'
+import Link from 'next/link'
 type itemsProps = {
   icon?: JSX.Element
   path: string
@@ -14,18 +15,18 @@ interface DropdownItemProps extends React.HTMLAttributes<Element> {
   title?: string
   items: itemsProps[]
   size?: 'default' | 'large'
-  isOpen: boolean
+  isopen: boolean
   children?: React.ReactNode
 }
 
-const DropdownItem = ({ items, title, size, isOpen }: DropdownItemProps) => {
+const DropdownItem = ({ items, title, size, isopen }: DropdownItemProps) => {
   return (
     <>
       <S.DropdownList
         width={size}
-        isOpen={isOpen}
+        isopen={isopen}
         aria-label="list"
-        aria-hidden={!isOpen}
+        aria-hidden={!isopen}
       >
         <S.Title>{title}</S.Title>
         {items.map((item, index) => (
@@ -51,7 +52,7 @@ export default function Dropdown({
   children,
   title,
   items,
-  size = 'default'
+  size = 'default',
 }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false)
   const reference = useRef(null)
@@ -63,7 +64,7 @@ export default function Dropdown({
       <S.Item onClick={() => setIsOpen(!isOpen)} aria-label="handle">
         {children}
       </S.Item>
-      <DropdownItem size={size} isOpen={isOpen} title={title} items={items} />
+      <DropdownItem size={size} isopen={isOpen} title={title} items={items} />
     </S.Container>
   )
 }

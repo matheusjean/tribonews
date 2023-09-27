@@ -21,14 +21,14 @@ export const Item = styled.div`
 `
 type DropdownListProps = {
   width?: 'default' | 'large'
-  isOpen: boolean
+  isopen: boolean
 }
 
 export const DropdownList = styled.div<DropdownListProps>`
-  ${({ theme, width, isOpen }) => css`
+  ${({ theme, width, isopen }) => css`
     position: absolute;
     top: 6rem;
-    right: 0;
+    right: 200px;
     background-color: ${theme.colors.secondBlack};
     justify-content: center;
     width: ${width === 'large' ? '26rem' : '20rem'};
@@ -39,8 +39,8 @@ export const DropdownList = styled.div<DropdownListProps>`
     align-items: center;
     padding: 1rem;
     cursor: pointer;
-    display: ${isOpen ? 'flex' : 'none'};
-    opacity: ${isOpen ? 1 : 0};
+    display: ${isopen ? 'flex' : 'none'};
+    opacity: ${isopen ? 1 : 0};
 
     &:before {
       position: absolute;

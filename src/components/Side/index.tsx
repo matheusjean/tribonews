@@ -19,7 +19,7 @@ const Side = () => {
         <Heading title='Categorias' />
         {category.map((val) => {
           return (
-            <div className='category category1'>
+            <div key={val} className='category category1'>
               <span>{val}</span>
             </div>
           )

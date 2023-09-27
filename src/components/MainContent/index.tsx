@@ -39,7 +39,7 @@ const Popular = () => {
         <Heading title='Popular' />
           <Slider autoplay={false} {...settings}>
             {popular.map((val) => (
-                <Box>
+                <Box key={val.title}>
                   <BoxShadow>
                     <Images>
                       <ImagesCover>

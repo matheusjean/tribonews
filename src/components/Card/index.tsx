@@ -8,7 +8,7 @@ const Card = ({ item: { id, cover, category, title, authorName, time } }) => {
     <>
       <Box>
         <Img>
-          <Image src={cover} alt={cover.name} layout="fill"/>
+          <Image src={cover} alt={id} layout="fill"/>
         </Img>
         <Text>
           <Category>{category}</Category>

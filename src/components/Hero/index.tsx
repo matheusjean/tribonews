@@ -13,9 +13,9 @@ const Hero = () => {
         <Container>
           {items.map((item) => {
             return (
-              <>
-                <Card key={item.id} item={item} />
-              </>
+              <div key={item.id}>
+                <Card item={item}/>
+              </div>
             )
           })}
         </Container>

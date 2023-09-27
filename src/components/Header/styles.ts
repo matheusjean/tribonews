@@ -52,7 +52,7 @@ export const ContentsContainer = styled.div`
 
 export const LogoContent = styled.div`
   ${({ theme }) => css`
-    width: 10rem;
+    width: 20rem;
 
     @media screen and (min-width: ${theme.screen.large}) {
     }

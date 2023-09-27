@@ -7,12 +7,12 @@ const Homes = () => {
   return (
     <>
       <main>
-        <div className='container' key="homes">
-          <section className='mainContent' key="seila">
-            <Popular key="popular"/>
+        <div className='container'>
+          <section className='mainContent'>
+            <Popular/>
           </section>
-          <section className='sideContent' key="sides">
-            <Side key="side"/>
+          <section className='sideContent'>
+            <Side/>
           </section>
         </div>
       </main>

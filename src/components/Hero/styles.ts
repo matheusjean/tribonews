@@ -16,7 +16,6 @@ export const Container = styled.div`
 
 export const Box = styled.div`
   position: relative;
-  padding: 30px;
 
   &:nth-child(1) {
     grid-column-start: 1;
@@ -65,22 +64,6 @@ export const Box = styled.div`
       }
     }
   }
-
-  &:nth-child(4) {
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 5;
-    grid-row-end: 9;
-
-    @media screen and (max-width: 768px) {
-      .hero .box:nth-child(4) {
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row-start: 15;
-        grid-row-end: 20;
-      }
-    }
-  }
 `
 
 export const Category = styled.span`
@@ -94,7 +77,7 @@ export const Category = styled.span`
 `
 
 export const Hero = styled.section`
-  margin: -870px 0;
+  margin: -880px 20px;
   max-width: 95%;
   padding-left: 5rem;
   color: #fff;

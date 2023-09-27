@@ -1,7 +1,7 @@
 main .container {
   display: flex;
   justify-content: space-between;
-  margin: 0 40px;
+  margin: 0 60px;
 }
 .mainContent {
   margin-top: 890px;
@@ -10,10 +10,14 @@ main .container {
 }
 .sideContent {
   margin-top: 890px;
-  width: 26%;
 }
 .sideContent .heading h6 {
   background-color: #000;
+}
+
+.sideContent .heading{
+  margin: 20px 0px;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   main .container {

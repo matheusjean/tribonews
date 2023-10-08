@@ -5,11 +5,12 @@ main .container {
 }
 .mainContent {
   margin-top: 890px;
-  width: 75%;
+  max-width: 75%;
   display: inline;
 }
 .sideContent {
   margin-top: 890px;
+  max-width: 25%;
 }
 .sideContent .heading h6 {
   background-color: #836FFF;

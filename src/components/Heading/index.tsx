@@ -1,12 +1,13 @@
 import React from "react"
-import "./heading.css"
+// import "./heading.css"
+import { Container } from './styles'
 
 const Heading = ({ title }) => {
   return (
     <>
-      <div className='heading'>
+      <Container>
         <h6>{title}</h6>
-      </div>
+      </Container>
     </>
   )
 }

@@ -11,7 +11,7 @@ export const getNewsById = async (newsId: string) => {
   return news
 }
 
-export const getNewsByHat = async (hat: any) => {
+export const getNewsByHat = async (hat: string) => {
   const news = await (await httpRequest.get(`/news/by-hat/${hat}`)).data
 
   return news

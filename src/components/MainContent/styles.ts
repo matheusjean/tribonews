@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
-export const Container = styled.section``
+export const Container = styled.section`
+  a {
+    text-decoration: none;
+    color: white;
+  }
+`
 
 export const Box = styled.div``
 

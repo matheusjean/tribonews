@@ -8,10 +8,11 @@ export type PostDetailsProps = {
   category?: string
 }
 
-export const PostDetails = ({ author, date }: PostDetailsProps) => {
+export const PostDetails = ({ author, date, category }: PostDetailsProps) => {
   return (
     <Container>
       Publicado em <DateFormatado date={date} /> por {author}
+      {category && <span> em {category}</span>}
     </Container>
   )
 }

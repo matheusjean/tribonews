@@ -17,7 +17,7 @@ import { DateFormatado } from 'components/Date'
 import Link from 'next/link'
 import { CarrousselSettings } from 'utils/carrousselSettings'
 
-export default function Popular () {
+export default function Popular() {
   const [news, setNews] = useState<News[]>([]);
 
   useEffect(() => {
@@ -35,36 +35,36 @@ export default function Popular () {
         <Heading title='Popular' />
         <Slider autoplay={false} {...CarrousselSettings}>
           {news.map((val) => (
-            <Link
-              href={`/news/by-hat/page`}
-              as={`/news/by-hat/${val.hat}`}
-            >
-              <Box key={val.title}>
-                <BoxShadow>
-                  <Images>
-                    <ImagesCover>
-                      <Image src={val.image} key={val.id} alt={val.title} layout="fill" />
-                    </ImagesCover>
-                    <Category>
-                      <CategoryLabel>{val.categories[0].name}</CategoryLabel>
-                    </Category>
-                  </Images>
-                  <Text>
+            <Box key={val.title}>
+              <BoxShadow>
+                <Images>
+                  <ImagesCover>
+                    <Image src={val.image} key={val.id} alt={val.title} layout="fill" />
+                  </ImagesCover>
+                  <Category>
+                    <CategoryLabel>{val.categories[0].name}</CategoryLabel>
+                  </Category>
+                </Images>
+                <Text>
+                  <Link
+                    href={`/news/by-hat/page`}
+                    as={`/news/by-hat/${val.hat}`}
+                  >
                     <Title>{val.title.slice(0, 51)}...</Title>
-                    <Date>
-                      <AiFillCalendar />
-                      <Label>
-                        <DateFormatado date={val.created_at} />
-                      </Label>
-                    </Date>
-                    <Comment>
-                      <AiOutlineComment />
-                      <Label>0</Label>
-                    </Comment>
-                  </Text>
-                </BoxShadow>
-              </Box>
-            </Link>
+                  </Link>
+                  <Date>
+                    <AiFillCalendar />
+                    <Label>
+                      <DateFormatado date={val.created_at} />
+                    </Label>
+                  </Date>
+                  <Comment>
+                    <AiOutlineComment />
+                    <Label>0</Label>
+                  </Comment>
+                </Text>
+              </BoxShadow>
+            </Box>
           ))}
         </Slider>
       </Container>

@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const httpRequest = axios.create({
-  baseURL: 'http://localhost:3333'
+  baseURL: 'https://news-with-prisma.vercel.app'
 })

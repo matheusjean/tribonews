@@ -16,3 +16,22 @@ export const getNewsByHat = async (hat: string) => {
 
   return news
 }
+
+export const getCategory = async () => {
+  const response = await (await httpRequest.get(`/category`)).data
+  return response
+}
+
+export const getCategoryById = async (categoryId: string) => {
+  const category = await (await httpRequest.get(`/category/${categoryId}`)).data
+
+  return category
+}
+
+export const getCategoryByName = async (name: string) => {
+  const category = await (
+    await httpRequest.get(`/category/by-category/${name}`)
+  ).data
+
+  return category
+}

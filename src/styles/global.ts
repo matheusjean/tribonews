@@ -100,74 +100,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
   /*-----------global-----------*/
-.container {
-  width: 92.8%;
-  margin: auto;
-}
-.flexSB {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.flex {
-  display: flex;
-}
-.paddingTB {
-  padding: 40px 0;
-}
-.paddingSmall {
-  padding: 20px 0;
-}
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
 }
-.category {
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 5px 10px;
-  letter-spacing: 2px;
-  background-color: purple;
-}
-.images {
-  position: relative;
-}
-.category1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-left: 5px solid #836FFF;
-  width: auto;
-  display: block;
-  background: linear-gradient(to right, #836FFF 50%, black 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-}
-.category1 span {
-  color: #fff;
-  text-transform: capitalize;
-  letter-spacing: 0;
-}
-.category1:hover {
-  background-position: left bottom;
-}
-.category1 span:hover {
-  color: #fff;
-}
-.desc {
-  font-size: 13px;
-  margin: 10px 0;
-}
-.shadow {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
-}
-
 /*-----------global-----------*/
 
 

@@ -6,6 +6,7 @@ import { useParams } from 'next/navigation'
 
 import GlobalStyles from '../styles/global'
 import ThemeProvider from './theme-provider'
+import { CategoryProvider } from 'context/CategoryContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,14 +21,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const hat = useParams()
+  const categories = useParams()
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
           <PostProvider hat={hat?.slug?.[1] as any}>
+          <CategoryProvider name={categories?.slug?.[1] as any}>
             <GlobalStyles />
             {children}
+          </CategoryProvider>
           </PostProvider>
         </ThemeProvider>
       </body>

@@ -1,10 +1,10 @@
-import Teste from './teste/page';
+import SectionHeader from '../components/SectionHeader/page';
 import Homes from 'components/Homes';
 
 export default function Home() {
   return (
     <>
-      <Teste />
+      <SectionHeader />
       <Homes />
     </>
   )

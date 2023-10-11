@@ -1,8 +1,7 @@
 "use client"
 import React from "react"
-import "./side.css"
 import Heading from "../Heading"
-import { SideAd } from './styles'
+import { Categories, SideAd, Wrapper } from './styles'
 
 const Side = () => {
   const category = ["Valorant", "LOL", "Counter-Strike", "Cinema",
@@ -16,16 +15,16 @@ const Side = () => {
         />
       </SideAd>
 
-      <section className='categories'>
+      <Wrapper>
         <Heading title='Categorias'/>
         {category.map((val) => {
           return (
-            <div key={val} className='category category1'>
+            <Categories key={val}>
               <span>{val}</span>
-            </div>
+            </Categories>
           )
         })}
-      </section>
+      </Wrapper>
     </>
   )
 }

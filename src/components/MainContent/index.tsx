@@ -46,7 +46,14 @@ export default function Popular() {
                       <Image src={val.image} key={val.id} alt={val.title} layout="fill" />
                     </ImagesCover>
                     <Category>
-                      <CategoryLabel>{val.categories[0].name}</CategoryLabel>
+                      <CategoryLabel>
+                        <Link
+                          href={`/category/by-category/page`}
+                          as={`/category/by-category/${val.categories[0].name}`}
+                        >
+                          {val.categories[0].name}
+                        </Link>
+                      </CategoryLabel>
                     </Category>
                   </Images>
                   <Text>

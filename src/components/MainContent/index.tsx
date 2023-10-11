@@ -35,36 +35,36 @@ export default function Popular() {
         <Heading title='Popular' />
         <Slider autoplay={false} {...CarrousselSettings}>
           {news.map((val) => (
-            <Box key={val.title}>
-              <BoxShadow>
-                <Images>
-                  <ImagesCover>
-                    <Image src={val.image} key={val.id} alt={val.title} layout="fill" />
-                  </ImagesCover>
-                  <Category>
-                    <CategoryLabel>{val.categories[0].name}</CategoryLabel>
-                  </Category>
-                </Images>
-                <Text>
-                  <Link
-                    href={`/news/by-hat/page`}
-                    as={`/news/by-hat/${val.hat}`}
-                  >
-                    <Title>{val.title.slice(0, 51)}...</Title>
-                  </Link>
-                  <Date>
-                    <AiFillCalendar />
-                    <Label>
-                      <DateFormatado date={val.created_at} />
-                    </Label>
-                  </Date>
-                  <Comment>
-                    <AiOutlineComment />
-                    <Label>0</Label>
-                  </Comment>
-                </Text>
-              </BoxShadow>
-            </Box>
+            <Link
+              href={`/news/by-hat/page`}
+              as={`/news/by-hat/${val.hat}`}
+            >
+              <Box key={val.title}>
+                <BoxShadow>
+                  <Images>
+                    <ImagesCover>
+                      <Image src={val.image} key={val.id} alt={val.title} layout="fill" />
+                    </ImagesCover>
+                    <Category>
+                      <CategoryLabel>{val.categories[0].name}</CategoryLabel>
+                    </Category>
+                  </Images>
+                  <Text>
+                    <Title>{val.title.slice(0, 63)}...</Title>
+                    <Date>
+                      <AiFillCalendar />
+                      <Label>
+                        <DateFormatado date={val.created_at} />
+                      </Label>
+                    </Date>
+                    <Comment>
+                      <AiOutlineComment />
+                      <Label>0</Label>
+                    </Comment>
+                  </Text>
+                </BoxShadow>
+              </Box>
+            </Link>
           ))}
         </Slider>
       </Container>

@@ -1,5 +1,4 @@
 import React from "react"
-// import "./heading.css"
 import { Container } from './styles'
 
 const Heading = ({ title }) => {

@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from "react"
-// import { Link } from "react-router-dom"
 import { Button, Container, Header, Li, Navbar, Ul } from './styless'
 import Link from 'next/link'
 import Image from 'next/image'

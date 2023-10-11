@@ -1,8 +1,6 @@
 import { useRef, useState } from 'react'
 import { useClickAway } from 'react-use'
 
-// import Link from 'components/Link'
-
 import * as S from './styles'
 import Link from 'next/link'
 type itemsProps = {

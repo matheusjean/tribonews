@@ -3,10 +3,3 @@ export const formatDate = (date: string) => {
 
   return dateObj.toLocaleDateString('pt-BR');
 };
-
-// return (
-//   dateObj.toLocaleDateString('pt-BR'),
-//   {
-//     timeZone: 'America/Sao_Paulo',
-//   }
-// );

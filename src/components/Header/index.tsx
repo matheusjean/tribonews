@@ -5,7 +5,6 @@ import { useClickAway } from 'react-use'
 
 import * as Ico from '@styled-icons/evaicons-outline'
 import Dropdown from 'components/Dropdown'
-// import Link from 'components/Link'
 import Image from 'next/image'
 
 import Logo from '../../assets/logo.jpeg'
@@ -35,7 +34,6 @@ export default function Header() {
               <Image
                 data-testid="logoooo"
                 src={Logo}
-                // layout="responsive"
                 objectFit="cover"
                 height={50}
                 width={200}

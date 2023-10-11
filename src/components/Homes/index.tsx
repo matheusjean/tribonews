@@ -1,20 +1,20 @@
 import React from "react"
 import Popular from "../MainContent"
-import "./style.css"
 import Side from 'components/Side'
+import { Container, MainContent, SideContent } from './styles'
 
 const Homes = () => {
   return (
     <>
       <main>
-        <div className='container'>
-          <section className='mainContent'>
+        <Container>
+          <MainContent>
             <Popular/>
-          </section>
-          <section className='sideContent'>
+          </MainContent>
+          <SideContent>
             <Side/>
-          </section>
-        </div>
+          </SideContent>
+        </Container>
       </main>
     </>
   )

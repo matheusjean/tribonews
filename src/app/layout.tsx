@@ -1,10 +1,11 @@
-"use client"
+'use client'
+import { PostProvider } from 'context/NewsContext'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import ThemeProvider from './theme-provider'
-import GlobalStyles from '../styles/global'
-import { PostProvider } from 'context/NewsContext'
 import { useParams } from 'next/navigation'
+
+import GlobalStyles from '../styles/global'
+import ThemeProvider from './theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 

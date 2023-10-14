@@ -10,24 +10,27 @@ import { AiFillCalendar, AiOutlineComment } from 'react-icons/ai'
 import Heading from "../Heading"
 import {
   Box, BoxShadow, Category, CategoryLabel, Comment, Container,
-  Date, Images, ImagesCover, Label, Text, Title
+  Date as DateStyle, Images, ImagesCover, Label, Text, Title
 } from './styles'
 import { getNews } from 'services/Requests'
 import { DateFormatado } from 'components/Date'
 import Link from 'next/link'
 import { CarrousselSettings } from 'utils/carrousselSettings'
+import { format, formatDistanceToNow, isBefore, subDays } from 'date-fns'
+import { pt } from 'date-fns/locale';
 
 export default function Popular() {
   const [news, setNews] = useState<News[]>([]);
 
   useEffect(() => {
     async function fetchData() {
-      const response = await getNews()
-      setNews(response)
-      return response
+      const response = await getNews();
+      const sortedNews = response.slice();
+      sortedNews.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+      setNews(sortedNews);
     }
-    fetchData()
-  }, [])
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -58,12 +61,12 @@ export default function Popular() {
                   </Images>
                   <Text>
                     <Title>{val.title.slice(0, 63)}...</Title>
-                    <Date>
+                    <DateStyle>
                       <AiFillCalendar />
                       <Label>
                         <DateFormatado date={val.created_at} />
                       </Label>
-                    </Date>
+                    </DateStyle>
                     <Comment>
                       <AiOutlineComment />
                       <Label>0</Label>

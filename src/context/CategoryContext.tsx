@@ -21,8 +21,6 @@ export const CategoryProvider: React.FC<PostProviderProps> = ({ children, name }
     async function fetchData() {
       try {
         const response = await getCategoryByName(name);
-        console.log(response);
-
         setCatName(response);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);

@@ -6,7 +6,12 @@ const nextConfig = {
     styledComponents: true
   },
   images: {
-    domains: ['gamearena.gg', 'localhost', 'noticias.maisesports.com.br']
+    domains: [
+      'gamearena.gg',
+      'localhost',
+      'noticias.maisesports.com.br',
+      'imagens.ebc.com.br'
+    ]
   },
   output: 'standalone'
 }

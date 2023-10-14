@@ -10,7 +10,8 @@ const nextConfig = {
       'gamearena.gg',
       'localhost',
       'noticias.maisesports.com.br',
-      'imagens.ebc.com.br'
+      'imagens.ebc.com.br',
+      'assets.gamearena.gg/wp-content'
     ]
   },
   output: 'standalone'

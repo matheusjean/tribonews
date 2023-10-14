@@ -1,10 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { formatDate } from 'utils/format-date'
 import { DateFormatado } from '../Date/index'
 import { Container } from './styles'
 
 export type PostDetailsProps = {
-  date?: any
+  date?: Date
   author?: string
   category?: string
 }
@@ -12,7 +11,7 @@ export type PostDetailsProps = {
 export const PostDetails = ({ author, date, category }: PostDetailsProps) => {
   return (
     <Container>
-      Publicado em {formatDate(date)} por {author}
+      Publicado em <DateFormatado date={date} /> por {author}
       {category && <span> em {category}</span>}
     </Container>
   )

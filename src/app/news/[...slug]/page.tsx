@@ -15,7 +15,7 @@ export default function Post() {
       <Heading2>{news?.title}</Heading2>
       <MainContainer>
         <PostCover coverUrl={news?.image} alt={news?.hat} />
-        <PostDetails author={news?.author} date={news?.created_at} category={news?.categories?.[0].name}/>
+        <PostDetails author={news?.author.username} date={news?.created_at} category={news?.categories?.[0].name}/>
         <PostContainer content={news?.text} />
       </MainContainer>
     </>

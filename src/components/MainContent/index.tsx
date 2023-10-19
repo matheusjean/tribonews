@@ -16,8 +16,6 @@ import { getNews } from 'services/Requests'
 import { DateFormatado } from 'components/Date'
 import Link from 'next/link'
 import { CarrousselSettings } from 'utils/carrousselSettings'
-import { format, formatDistanceToNow, isBefore, subDays } from 'date-fns'
-import { pt } from 'date-fns/locale';
 
 export default function Popular() {
   const [news, setNews] = useState<News[]>([]);

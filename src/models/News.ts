@@ -1,5 +1,9 @@
 interface News {
-  author: string
+  author: {
+    id: string
+    username: string
+    email: string
+  }
   hat: string
   id: string
   image: string

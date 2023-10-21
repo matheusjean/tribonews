@@ -1,10 +1,16 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { Container } from './styles'
+import React from 'react';
+import {marked} from 'marked';
+import { Container } from './styles';
 
 export type PostContentProps = {
-  content?: string
-}
+  content?: string;
+};
 
 export const PostContainer = ({ content }: PostContentProps) => {
-  return <Container>{content}</Container>
-}
+  if (!content) {
+    return null;
+  }
+
+  const htmlContent = marked(content);
+  return <Container dangerouslySetInnerHTML={{ __html: htmlContent }} />;
+};

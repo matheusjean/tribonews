@@ -39,6 +39,7 @@ const Hero = () => {
 
           return (
             <Card
+              hat={item.hat}
               cover={item.image}
               id={item.id}
               category={item.categories[0].name}

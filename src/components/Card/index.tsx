@@ -4,7 +4,7 @@ import { Image as Img, Author, Box, Category, Text, Time, Title } from './styles
 import Image from 'next/image';
 import { DateFormatado } from 'components/Date';
 
-const Card = ({ id, cover, category, title, authorName, time, highlightedClass }) => {
+const Card = ({ id, cover, category, title, authorName, time, highlightedClass, hat }) => {
   return (
     <>
       <Box className={highlightedClass}>
@@ -13,7 +13,8 @@ const Card = ({ id, cover, category, title, authorName, time, highlightedClass }
         </Img>
         <Text>
           <Category>{category}</Category>
-          <Link href={`/SinglePage/${id}`}>
+          <Link href={`/news/by-hat/page`}
+            as={`/news/by-hat/${hat}`}>
             <Title>{title}</Title>
           </Link>
           <div>

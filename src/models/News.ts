@@ -11,6 +11,7 @@ interface News {
   link: string
   text: string
   title: string
+  isHighlighted: number
   categories: [
     {
       created_at: string

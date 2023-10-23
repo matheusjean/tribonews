@@ -16,7 +16,11 @@ export const Box = styled.div`
   position: relative;
   padding: 30px;
 
-  &:nth-child(1) {
+  h1 {
+    font-size: 15px;
+  }
+
+  &.highlighted-1 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -27,24 +31,22 @@ export const Box = styled.div`
     }
   }
 
-  &:nth-child(2) {
+  &.highlighted-2 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 5;
-
     h1 {
       margin-top: 5px;
       font-size: 25px;
     }
   }
 
-  &:nth-child(3) {
+  &.highlighted-3 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 9;
-
     h1 {
       margin-top: 5px;
       font-size: 20px;

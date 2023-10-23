@@ -1,14 +1,15 @@
-import Link from 'next/link'
-import React from "react"
-import { Image as Img, Author, Box, Category, Text, Time, Title } from './styles'
-import Image from 'next/image'
+import Link from 'next/link';
+import React from "react";
+import { Image as Img, Author, Box, Category, Text, Time, Title } from './styles';
+import Image from 'next/image';
+import { DateFormatado } from 'components/Date';
 
-const Card = ({ item: { id, cover, category, title, authorName, time } }) => {
+const Card = ({ id, cover, category, title, authorName, time, highlightedClass }) => {
   return (
     <>
-      <Box>
+      <Box className={highlightedClass}>
         <Img>
-          <Image src={cover} alt={id} layout="fill"/>
+          <Image src={cover} alt={id} layout="fill" />
         </Img>
         <Text>
           <Category>{category}</Category>
@@ -17,12 +18,14 @@ const Card = ({ item: { id, cover, category, title, authorName, time } }) => {
           </Link>
           <div>
             <Author>by {authorName}</Author>
-            <Time>{time}</Time>
+            <Time>
+              <DateFormatado date={time} />
+            </Time>
           </div>
         </Text>
       </Box>
     </>
-  )
+  );
 }
 
-export default Card
+export default Card;

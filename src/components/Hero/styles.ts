@@ -22,15 +22,6 @@ export const Box = styled.div`
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 9;
-
-    @media screen and (max-width: 768px) {
-      .hero .box:nth-child(1) {
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 5;
-      }
-    }
   }
 
   &:nth-child(2) {
@@ -38,15 +29,6 @@ export const Box = styled.div`
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 5;
-
-    @media screen and (max-width: 768px) {
-      .hero .box:nth-child(2) {
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row-start: 5;
-        grid-row-end: 10;
-      }
-    }
   }
 
   &:nth-child(3) {
@@ -54,15 +36,6 @@ export const Box = styled.div`
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 9;
-
-    @media screen and (max-width: 768px) {
-      .hero .box:nth-child(3) {
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row-start: 10;
-        grid-row-end: 15;
-      }
-    }
   }
 `
 

@@ -24,7 +24,6 @@ export const Container = styled.div`
 export const Title = styled.span`
   ${({ theme }) => css`
     width: 100%;
-    /* margin-right: 100px; */
     font-size: ${theme.font.sizes.xsmall};
     font-weight: ${theme.font.regular};
   `}
@@ -39,7 +38,6 @@ export const ContentsContainer = styled.div`
     height: 100%;
     max-width: 100%;
     align-items: start;
-    /* width: 100%; */
     padding: 1.4rem;
     @media screen and (min-width: ${theme.screen.large}) {
       flex-direction: row;
@@ -223,9 +221,7 @@ export const Text = styled.h1`
   transition: all 0.5s ease-out;
   cursor: pointer;
 
-  text-transform: uppercase;
   padding: 5px 10px;
-  letter-spacing: 2px;
 
   &:hover {
     background-position: left bottom;

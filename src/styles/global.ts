@@ -105,6 +105,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 /*-----------global-----------*/
 

@@ -81,15 +81,9 @@ export const ListContent = styled.div`
   `}
 `
 export const DivisionContent = styled.div`
-  ${({ theme }) => css`
-    height: 2.5rem;
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-    @media (min-width: ${theme.screen.large}) {
-      justify-content: flex-end;
-    }
-  `}
+  display: flex;
+  justify-content: center;
+  gap: 20px !important;
 `
 export const DropdownContent = styled.div`
   display: flex;
@@ -128,15 +122,14 @@ export const Profile = styled.div`
 `
 
 export const Web = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    width: 70%;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: ${theme.screen.large}) {
-      display: none;
-    }
-  `}
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: red;
+  }
 `
 export const Exit = styled.div`
   ${({ theme }) => css`
@@ -213,4 +206,28 @@ export const item = styled.div`
     color: ${theme.colors.white};
     text-align: start;
   `}
+`
+export const Text = styled.h1`
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: 20px;
+  position: relative;
+
+  border-left: 5px solid #836fff;
+  width: auto;
+  display: block;
+  background: linear-gradient(to right, #836fff 50%, #0a0a0a 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+
+  &:hover {
+    background-position: left bottom;
+  }
 `

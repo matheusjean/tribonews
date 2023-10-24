@@ -1,29 +1,33 @@
 "use client"
-
-import { useRef, useState } from 'react'
-import { useClickAway } from 'react-use'
-
-import * as Ico from '@styled-icons/evaicons-outline'
-import Dropdown from 'components/Dropdown'
-import Image from 'next/image'
-
-import Logo from '../../assets/logo.jpeg'
-
-import * as S from './styles'
-import Link from 'next/link'
+import { useEffect, useRef, useState } from 'react';
+import { useClickAway } from 'react-use';
+import Image from 'next/image';
+import Logo from '../../assets/ilhadaslendas.png';
+import * as S from './styles';
+import Link from 'next/link';
+import { getCategory } from 'services/Requests';
 
 export default function Header() {
-  const [, setMenuIsOpen] = useState(false)
-  const reference = useRef(null)
+  const [catName, setCatName] = useState<Category[]>([]);
+  const [, setMenuIsOpen] = useState(false);
+  const reference = useRef(null);
   useClickAway(reference, () => {
-    setMenuIsOpen(false)
-  })
-  const categories = [
-    { path: '/categories/1', name: 'primeiro' },
-    { path: '/categories/2', name: 'segundo' },
-    { path: '/categories/3', name: 'terceiro' },
-    { path: '/categories', name: 'ver todas' }
-  ]
+    setMenuIsOpen(false);
+  });
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await getCategory();
+        setCatName(response);
+        console.log({ response });
+      } catch (error) {
+        console.error('Erro ao buscar dados:', error);
+      }
+    }
+
+    fetchData();
+  }, []);
 
   return (
     <S.Wrapper>
@@ -36,41 +40,28 @@ export default function Header() {
                 src={Logo}
                 objectFit="cover"
                 height={50}
-                width={200}
+                width={50}
                 alt="logo"
               />
             </Link>
           </S.LogoContent>
           <S.Web>
             <S.ListContent>
-              <S.DivisionContent>
-                <S.DropdownContent>
-                  <Dropdown items={categories}>
-                    <S.Title>Categorias</S.Title>
-                    <Ico.ArrowIosDownwardOutline color="#fff" size="2.5rem" />
-                  </Dropdown>
-                </S.DropdownContent>
-              </S.DivisionContent>
-              <S.DivisionContent>
-                <S.DropdownContent>
-                  <Dropdown items={categories}>
-                    <S.Title>Categorias 2</S.Title>
-                    <Ico.ArrowIosDownwardOutline color="#fff" size="2.5rem" />
-                  </Dropdown>
-                </S.DropdownContent>
-              </S.DivisionContent>
-              <S.DivisionContent>
-                <S.DropdownContent>
-                  <Dropdown items={categories}>
-                    <S.Title>Categorias 3</S.Title>
-                    <Ico.ArrowIosDownwardOutline color="#fff" size="2.5rem" />
-                  </Dropdown>
-                </S.DropdownContent>
-              </S.DivisionContent>
+              {catName.map((cat) => (
+                <S.DivisionContent key={cat.id}>
+                  <S.Text>
+                    <Link
+                      href={`/category/by-category/${cat.name}`}
+                    >
+                      {cat.name}
+                    </Link>
+                  </S.Text>
+                </S.DivisionContent>
+              ))}
             </S.ListContent>
           </S.Web>
         </S.ContentsContainer>
       </S.Container>
     </S.Wrapper>
-  )
+  );
 }

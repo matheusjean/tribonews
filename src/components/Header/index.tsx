@@ -20,7 +20,6 @@ export default function Header() {
       try {
         const response = await getCategory();
         setCatName(response);
-        console.log({ response });
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
       }

@@ -13,7 +13,7 @@ export const Container = styled.main`
 
 export const MainContent = styled.section`
   margin-top: 890px;
-  max-width: 75%;
+  max-width: 82.5%;
   display: inline;
 
   @media screen and (max-width: 768px) {
@@ -22,8 +22,8 @@ export const MainContent = styled.section`
 `
 
 export const SideContent = styled.section`
-  margin-top: 890px;
-  max-width: 25%;
+  margin-top: 276px;
+  max-width: 30%;
 
   h6 {
     background-color: #836fff;

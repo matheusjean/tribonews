@@ -51,7 +51,7 @@ export const Category = styled.span`
 
 export const Hero = styled.section`
   margin: -880px 20px;
-  max-width: 95%;
+  max-width: 78%;
   padding-left: 5rem;
   color: #fff;
 

@@ -2,20 +2,20 @@
 import React from "react"
 import Heading from "../Heading"
 import { Categories, SideAd, Wrapper } from './styles'
+import Image from 'next/image'
 
 const Side = () => {
-  const category = ["Valorant", "LOL", "Counter-Strike", "Cinema",
-    "Notícias", "Comic-con", "Gamescon", "Diablo 4"
-  ]
+
   return (
     <>
       <SideAd className='banner'>
-        <img alt="bannerAd"
-          src='https://gamearena.gg/wp-content/uploads/2023/08/assassins-creed-codename-red-parece-que-se-lanzara-en-2024.webp'
+        <Image alt="bannerAd"
+          width={300} height={575}
+          src='https://maisesports.com.br/_next/image/?url=https%3A%2F%2Felasticbeanstalk-us-east-1-909474674380.s3.amazonaws.com%2Fstrapi-uploads%2F300x600_stake_53335c035f.gif&w=384&q=75'
         />
       </SideAd>
 
-      <Wrapper>
+      {/* <Wrapper>
         <Heading title='Categorias'/>
         {category.map((val) => {
           return (
@@ -24,7 +24,7 @@ const Side = () => {
             </Categories>
           )
         })}
-      </Wrapper>
+      </Wrapper> */}
     </>
   )
 }

@@ -60,7 +60,7 @@ export const Category = styled.span`
   text-transform: uppercase;
   color: #fff;
   padding: 5px 10px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background-color: #836fff;
 `
 

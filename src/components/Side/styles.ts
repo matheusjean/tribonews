@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 export const SideAd = styled.section`
-  margin: 30px 0;
+  margin: 70px 0;
 `
 
 export const Wrapper = styled.section``

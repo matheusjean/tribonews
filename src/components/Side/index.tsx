@@ -10,7 +10,7 @@ const Side = () => {
     <>
       <SideAd className='banner'>
         <Image alt="bannerAd"
-          width={300} height={535}
+          width={300} height={533}
           src='https://maisesports.com.br/_next/image/?url=https%3A%2F%2Felasticbeanstalk-us-east-1-909474674380.s3.amazonaws.com%2Fstrapi-uploads%2F300x600_stake_53335c035f.gif&w=384&q=75'
         />
       </SideAd>
